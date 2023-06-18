@@ -1,0 +1,366 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+body {
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 248, 238);
+}
+.header {
+    background-color: rgb(254, 217, 168);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+}
+.header h1 {
+    font-size: 1.5rem;
+}
+.nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 3rem;
+    background-color: antiquewhite;
+    padding: 0 2rem;
+}
+.nav div {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease; 
+    text-align: center;
+    min-width: 9rem;
+    cursor: pointer;
+}
+
+.nav div:hover {
+    background-color: rgb(253, 188, 104);
+}
+.nav a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.mm {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.mleft {
+    width: 49rem;
+    padding: 2rem;
+    border-right: 1px black dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: calc(100vh - 7rem);
+
+    
+}
+.mleft h4{
+    font-weight:500;
+    font-style: italic;
+    width: 90%;
+    margin-top: 1.5rem;
+    color: rgba(0, 0, 0, 0.779);
+}
+.textMethod {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    padding: 2rem;
+}
+.textSteps {
+    padding: 2rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    background-color: rgb(252, 219, 163);
+    border-radius: 1rem;
+    width:90%;
+}
+.textSteps h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.mright {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+}
+
+
+.questionForm {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 33rem;
+    height: 16rem;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.questionForm div {
+    width: 100%;
+    align-items: flex-start;
+    margin: 1rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+.questionForm input {
+    height: 2rem;
+    padding: 0.5rem;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.guess input {
+    width: 4rem;
+}
+
+.submitFunc {
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: rgb(252, 221, 183);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+}
+
+.ansDiv {
+    border: 1px solid black;
+    width: 33rem;
+    min-height: 5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.guessDiv, .funcDiv {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0;
+
+}
+.guessFill, .funcFill {
+    margin-left: 2rem;
+}
+.graphDiv, .contourDiv {
+    width: 100%;
+}
+.graphFill, .contourFill {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+}
+
+.contourFill img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.methods {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imager {
+    width:20rem;
+}
+.dropDownMethod {
+    position: absolute;
+    padding: 0.5rem 1rem;
+    display: none;
+    width: 15rem;
+    top: 90%;
+    background-color: rgb(251, 239, 223);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+.dropDownMethod div {
+    padding: 0.5rem;
+}
+
+
+.methods:hover .dropDownMethod{
+    display: block;
+    text-align: center;
+    background-color: rgb(251, 239, 223);
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.contactForm label {
+    margin: 2rem 0 0.5rem 0;
+}
+
+.contactForm input {
+    height: 2.2rem;
+    font-size: 1.2rem;
+    width: 23rem;
+    background-color: rgb(255, 248, 238);   
+    border: 1px solid black;
+    padding: 0 0.5rem;
+    border-radius: 3px;
+}
+
+.textComment {
+    width: 23rem;
+    background-color: rgb(255, 248, 238);   
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+.contactPage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h1 {
+    margin: 3rem 0 1rem 0;
+}
+
+.contact h3 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.contact button {
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: rgb(252, 221, 183);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+}
+
+.contact button:hover {
+    background-color: rgb(247, 187, 114);
+}
+
+.home1 {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.home1 p {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.618);   
+    margin: 1rem 0 2rem 0; 
+}
+
+.home1 h1 {
+    margin: 2rem;
+}
+.home2 h3 {
+    margin: 1rem 2rem;
+}
+.home2 h4 {
+    margin: 0.5rem 2rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.home2 {
+    width: 60rem;
+    display: flex;
+    flex-direction: row; 
+    margin: 2rem 0;   
+}
+
+.home2 div {
+    width: 60%;
+}
+
+.home2 img {
+    width: 21rem;
+}
+
+.names {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.profileDiv {
+    width: 32rem;
+    height: 10rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(248, 231, 209);
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.students h1, .profs h1 {
+    font-size: 1.5rem;
+}
+.students, .prof {
+    margin-bottom: 1.5rem;
+}
+
+.profileDiv h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.profIcons svg {
+    margin-right: 1rem;
+    color: rgb(202, 115, 2);
+    cursor: pointer;
+}
+
+#prr {
+    display: flex;
+    align-items: center;
+}
+#prr a {
+    color: rgb(202, 115, 2);
+    margin-left: 0.5rem;
+}
